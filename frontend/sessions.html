@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Sesiones</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="sessions.html">Gestión de Sesiones</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+    <div class="container">
+        <h1>Gestión de Sesiones</h1>
+        
+        <div class="active-sessions">
+            <h2>Sesiones Activas</h2>
+            <ul>
+                <li>Entrenamiento de Porteros - Fecha: 15 de marzo <button class="remove-button">Eliminar</button></li>
+                <li>Clínica de Técnicas de Tiro - Fecha: 20 de marzo <button class="remove-button">Eliminar</button></li>
+            </ul>
+        </div>
+
+        <div class="add-session">
+            <h2>Agregar Nueva Sesión</h2>
+            <input type="text" placeholder="Nombre de la sesión" id="session-name">
+            <input type="date" id="session-date">
+            <button id="add-button">Agregar Sesión</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Soccer Training Campus</p>
+    </footer>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html> 
