@@ -12,4 +12,8 @@ app.include_router(activity.router)
 
 @app.get("/")
 def read_root():
-    return {"message": "Bienvenido al API del campus de entrenamiento de fútbol"} 
+    return {"message": "Bienvenido al API del campus de entrenamiento de fútbol"}
+
+@app.get("/api/users")
+async def get_users():
+    return [{"name": "User1"}, {"name": "User2"}] 
